@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="css/styles.css" rel="stylesheet" />
+        <meta name="viewport" content="width=800px initalscale=0" />
+    </head>
+    <body>
+        <div class="container">
+            <div id="entrer">
+                <form>
+                    <p>
+                        <input
+                            type="radio"
+                            name="choix"
+                            id="cesar"
+                            value="cesar"
+                        />
+                        <label for="cesar">Cesar</label><br />
+
+                        <label for="cesar_key">Entrez une clef</label><br />
+                        <input
+                            type="number"
+                            name="cesar_key"
+                            id="cesar_key"
+                            value="0"
+                            disabled="disabled"
+                        /><br />
+                        <input
+                            type="radio"
+                            name="choix"
+                            id="vinger"
+                            value="vinger"
+                        />
+
+                        <label for="vinger">Vinger</label><br />
+                        <label for="vinger_key">Entrez une clef</label>
+                        <br />
+
+                        <textarea
+                            name="vinger_key"
+                            id="vinger_key"
+                            disabled="disabled"
+                        ></textarea
+                        ><br />
+
+                        <textarea name="enter" id="msg" disabled>
+Saisir votre message ici!</textarea
+                        >
+                        <br />
+                        <input
+                            type="checkbox"
+                            name="decrypter"
+                            id="decrypter"
+                        /><label for="decrypter">Dechiffrer le message</label
+                        ><br />
+                        <input
+                            type="button"
+                            onclick="coder();"
+                            id="encrypt"
+                            value="Crypter"
+                            disabled
+                        />
+                    </p>
+                </form>
+            </div>
+
+            <div id="sortie">
+                <p>SORTIE</p>
+            </div>
+        </div>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

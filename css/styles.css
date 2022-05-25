@@ -1,0 +1,30 @@
+body
+{
+  font-size: normal;
+}
+
+.container{
+  display: flex;
+  background-color: #00DEEB;
+  justify-content :center;
+  max-height : 50%;
+}
+
+.container > div{
+  border:2px solid black;
+  border-radius:10px;
+  flex-wrap: wrap;
+  margin : 5px;
+  padding:5px;
+}
+
+#sortie{
+  
+  flex-basis : 50%;
+  overflow: scroll;
+  flex-shrink:3;
+}
+
+#entrer{
+  max-height:50%;
+}
